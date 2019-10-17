@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+Copyright 2018 The Go Authors. All rights reserved.
+Use of this source code is governed by a BSD-style
+license that can be found in the LICENSE file.
+-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Text Encipher/Decipher</title>
+</head>
+<center>
+<body>
+<img src="https://raw.githubusercontent.com/maxng07/ted/master/avatar.png"><p>
+<h1> Text Encipher / Decipher - Project Enigma </h1> 
+Text Encipher/Decipher Program v0.1. Built with Love from Singapore!
+<p>
+<form accept-charset="utf-16">
+	<label for="name">Text to Encipher/Decipher </label> <br>
+	<textarea id="intext" name="intext" onfocus="this.value=''" cols="55" rows="6" style="text-align:left; overflow:auto; border:3px outset #000000">
+	</textarea><br /> 
+</p>
+	<input id="ed1" name="ed" type="radio" value="Encipher" /> Encryption  
+	<input id="ed2" name="ed" type="radio" value="Decipher" /> Decryption 
+<p>
+	<label for="password">Password</label><br /> 
+	<input id="password" name="password" type="text" style="text-align:left; overflow:auto; border:3px outset #000000"> <br /> 
+<P>
+	<label for="output">Generate OutPut: </label> <br>
+	<textarea id="outtext" rows=10 cols=55 input align="left" style="text-align:left; overflow:auto; border:3px outset #000001" >Output: 
+	</textarea>
+</P>
+	<button type="reset" value="Reset" id="reset">Reset</button>
+</form>
+	<button type="submit" onClick="start();" id="runButton" disabled >Run</button>
+	<button type="button" onClick="CopyFunction();" id="myOutput" > Copy Output</button>
+<script type="text/javascript" charset="utf-8" src="wasm.js"></script>
+	<script charset="utf-8">
+		var _0x4d63=['execCommand','copy','value','intext','required\x20field\x20empty','ed1','checked','-e=0','clear','argv','run','instantiate','importObject','instantiateStreaming','arrayBuffer','ted-wb.wasm','then','module','instance','disabled','getElementById','outtext','select'];(function(_0x1310fe,_0x4875d7){var _0x234c94=function(_0x5a8f20){while(--_0x5a8f20){_0x1310fe['push'](_0x1310fe['shift']());}};_0x234c94(++_0x4875d7);}(_0x4d63,0x87));var _0x4e26=function(_0x4466e3,_0x46b4ff){_0x4466e3=_0x4466e3-0x0;var _0x299876=_0x4d63[_0x4466e3];return _0x299876;};function CopyFunction(){var _0x3b66cd=document[_0x4e26('0x0')](_0x4e26('0x1'));_0x3b66cd[_0x4e26('0x2')]();_0x3b66cd['setSelectionRange'](0x0,0x1869f);document[_0x4e26('0x3')](_0x4e26('0x4'));alert('Copied\x20the\x20text:\x20'+_0x3b66cd[_0x4e26('0x5')]);}function start(){text=document[_0x4e26('0x0')](_0x4e26('0x6'))['value'];pw=document[_0x4e26('0x0')]('password')[_0x4e26('0x5')];if(text==''||pw==''){console['log'](_0x4e26('0x7'));alert('Required\x20field\x20empty');return![];}var _0x8155c5='';if(document[_0x4e26('0x0')](_0x4e26('0x8'))[_0x4e26('0x9')]){_0x8155c5='-e';}else if(document[_0x4e26('0x0')]('ed2')['checked']){_0x8155c5=_0x4e26('0xa');}else alert('Please\x20select\x20Encrypt\x20or\x20Decrypt');outtext[_0x4e26('0x5')]='';console[_0x4e26('0xb')]();go[_0x4e26('0xc')]=['ted-wb.wasm','-p',pw,_0x8155c5,'-t',text];console['log'](go[_0x4e26('0xc')]);run();};async function run(){await go[_0x4e26('0xd')](inst);inst=await WebAssembly[_0x4e26('0xe')](mod,go[_0x4e26('0xf')]);}if(!WebAssembly[_0x4e26('0x10')]){WebAssembly['instantiateStreaming']=async(_0x307bea,_0x248014)=>{const _0x3843d4=await(await _0x307bea)[_0x4e26('0x11')]();return await WebAssembly[_0x4e26('0xe')](_0x3843d4,_0x248014);};}const go=new Go();let mod,inst;WebAssembly[_0x4e26('0x10')](fetch(_0x4e26('0x12')),go[_0x4e26('0xf')])[_0x4e26('0x13')](_0xc11f94=>{mod=_0xc11f94[_0x4e26('0x14')];inst=_0xc11f94[_0x4e26('0x15')];document[_0x4e26('0x0')]('runButton')[_0x4e26('0x16')]=![];});
+		
+		
+	</script>
+</body>
+</center>
+</html>
