@@ -5,3 +5,5 @@ TED-GUI offers a Web based Graphical interface for user to input the parameters,
 
 <b>Usage: </b></br>
 You can download the html, js and wasm and run it with your own web servers or web storage. Some browsers like firefox supports allowing or disabling CORS, this will allow wasm to be completely loaded without a web server. It is also possible to build a local lightweigh web server for the html and wasm to run locally.
+
+Download the 3 files from <a href="https://github.com/maxng07/ted-gui/releases"> here </a><br>
