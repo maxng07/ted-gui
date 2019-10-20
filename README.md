@@ -1,5 +1,4 @@
-<img src="https://github.com/maxng07/ted/blob/master/mi.png">
-<h2> TED-GUI </h2>
+# <img src="https://github.com/maxng07/ted/blob/master/mi.png"> TED-GUI 
 TED-GUI is an extension of the TED program (https://github.com/maxng07/ted) with a Web Application GUI. HTML and Javascript is the frontend UI and interacts with TED binary in WebAssembly/WASM to encipher or decipher the Input text. The crypto operations happens locally within the broswer sandbox.
 
 TED-GUI offers a Web based Graphical interface for user to input the parameters, and TED WASM will perform the crypto function either for enciper or decipher. The provided html and js is the web frontend that interacts with wasm. You can build your own html and use the provided wasm to perform encipher/decipher operations too.
