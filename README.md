@@ -12,10 +12,10 @@ Download the 3 files from <a href="https://github.com/maxng07/ted-gui/releases">
 <p>
   Tutorials are <a href="https://github.com/maxng07/ted-gui/tree/master/graphics"> here </a>
 <p>
-#Licensing
+<h2>Licensing </h2>
 All RIGHTS RESERVED.
 
-Filecrypt uses a GO package for AES-GCMSIV which has a copyright license as part of BoringSSL. The copyright notice as is below
+TED-GUI uses a GO package for AES-GCMSIV which has a copyright license as part of BoringSSL. The copyright notice as is below
 
 /* Copyright (c) 2017, Google Inc. *
 
