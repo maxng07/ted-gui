@@ -13,7 +13,7 @@ Download the 3 files from <a href="https://github.com/maxng07/ted-gui/releases">
 Tutorials are <a href="https://github.com/maxng07/ted-gui/tree/master/graphics"> here </a>
 <p>
 
-I have also written up an Overview of how TED-GUI works, the information allowing you to build your own HTML and WebApp, utilising ted-wb wasm. Be sure to check out the Wiki Page.
+I have also written up an Overview of how TED-GUI works, the information allowing you to build your own HTML and WebApp, utilising ted-wb wasm. Be sure to check out the <a href="https://github.com/maxng07/ted-gui/wiki"> Wiki </a> Page.
 <p>
  
 <h2>Licensing </h2>
