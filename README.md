@@ -10,8 +10,12 @@ You can download the html, js and wasm and run it with your own web servers or w
 
 Download the 3 files from <a href="https://github.com/maxng07/ted-gui/releases"> here </a><br>
 <p>
-  Tutorials are <a href="https://github.com/maxng07/ted-gui/tree/master/graphics"> here </a>
+Tutorials are <a href="https://github.com/maxng07/ted-gui/tree/master/graphics"> here </a>
 <p>
+
+I have also written up an Overview of how TED-GUI works, the information allowing you to build your own HTML and WebApp, utilising ted-wb wasm. Be sure to check out the Wiki Page.
+<p>
+ 
 <h2>Licensing </h2>
 All RIGHTS RESERVED.
 
