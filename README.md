@@ -16,8 +16,9 @@ Tutorials are <a href="https://github.com/maxng07/ted-gui/tree/master/graphics">
 I have also written up an Overview of how TED-GUI works, the information allowing you to build your own HTML and WebApp, utilising ted-wb wasm. Be sure to check out the <a href="https://github.com/maxng07/ted-gui/wiki"> Wiki </a> Page.
 <p>
  
-Graphical view of accessign TED-GUI off LWS, notice that html, js and wasm is loaded off the server. Each Text Encipher/Decipher is handle locally within the browser by TED wasm, nothing is send to the server despite loading off LWS.
-
+Graphical view of accessing TED-GUI off LWS, notice that html, js and wasm is loaded off the server. Each Text Encipher/Decipher is handle locally within the browser by TED wasm, nothing is send to the server despite loading off LWS.
+<img src="https://github.com/maxng07/Lightweight-Web-Server/blob/master/graphics/webserver2.png"> <p>
+<img src="https://github.com/maxng07/Lightweight-Web-Server/blob/master/graphics/webserver.png">
 <h2>Licensing </h2>
 All RIGHTS RESERVED.
 
