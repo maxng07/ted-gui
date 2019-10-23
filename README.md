@@ -6,7 +6,7 @@ TED-GUI offers a Web based Graphical interface for user to input the parameters,
 TED-GUI with the html and js is able to support encipher/decipher of both single-byte and double-byte language with the current release. Verified and tested languages includes: English, Bahasa, Simplified Chinese, Japanese and Thai, representing both single and double byte language. Please feel free to report any languages that is not able to be encipher/decipher. If you intend to build your own html and use the wasm binary file, you can perform an encodeURI/decodeURI for double byte language. The ted wasm binary has the same logic as the ted binary and accept the same CLI inputs and one additional for text.
 
 <b>Usage: </b></br>
-You can download the html, js and wasm and run it with your own web servers or web storage. Some browsers like firefox supports allowing or disabling CORS, this will allow wasm to be completely loaded without a web server. It is also possible to build a local lightweight web server for the html and wasm to run locally.
+You can download the html, js and wasm and run it with your own web servers or web storage. Some browsers like firefox supports allowing or disabling CORS, this will allow wasm to be completely loaded without a web server by accessing the html. It is also possible to build a local lightweight web server for the html and wasm to run locally, an option is to use <a href="https://github.com/maxng07/Lightweight-Web-Server"> LWS - Lightweight Web Server </a>. LWS will be able to set wasm as Application/WASM in the Content Type in the HTTP header. Some web browsers like Firefox will not load if this is not set correctly.
 
 Download the 3 files from <a href="https://github.com/maxng07/ted-gui/releases"> here </a><br>
 <p>
@@ -16,6 +16,8 @@ Tutorials are <a href="https://github.com/maxng07/ted-gui/tree/master/graphics">
 I have also written up an Overview of how TED-GUI works, the information allowing you to build your own HTML and WebApp, utilising ted-wb wasm. Be sure to check out the <a href="https://github.com/maxng07/ted-gui/wiki"> Wiki </a> Page.
 <p>
  
+Graphical view of accessign TED-GUI off LWS, notice that html, js and wasm is loaded off the server. Each Text Encipher/Decipher is handle locally within the browser by TED wasm, nothing is send to the server despite loading off LWS.
+
 <h2>Licensing </h2>
 All RIGHTS RESERVED.
 
