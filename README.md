@@ -22,7 +22,7 @@ Graphical view of accessing TED-GUI off LWS, notice that html, js and wasm is lo
 <h2>Licensing </h2>
 All RIGHTS RESERVED.
 
-TED-GUI uses a GO package for AES-GCMSIV which has a copyright license as part of BoringSSL. The copyright notice as is below
+TED-GUI also uses a GO package for AES-GCMSIV which has a copyright license as part of BoringSSL. The copyright notice as is below
 
 /* Copyright (c) 2017, Google Inc. *
 
