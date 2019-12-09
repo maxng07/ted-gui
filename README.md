@@ -19,6 +19,11 @@ I have also written up an Overview of how TED-GUI works, the information allowin
 Graphical view of accessing TED-GUI off LWS, notice that html, js and wasm is loaded off the server. Each Text Encipher/Decipher is handle locally within the browser by TED wasm, nothing is send to the server despite loading off LWS.
 <img src="https://github.com/maxng07/Lightweight-Web-Server/blob/master/graphics/webserver2.png"> <p>
 <img src="https://github.com/maxng07/Lightweight-Web-Server/blob/master/graphics/webserver.png">
+
+<p>
+#Additional Use-Case <br>
+Using TED WASM for Field Encryption of sensitive data or confidential data in forms before POSTING in HTTPS/TLS to Content Distribution Network or the Origin Server. Data such as Credit card number, Personal identifiable number can remain encrypted at rest, until the Application that handles it, decrypts the data.
+<p>
 <h2>Licensing </h2>
 All RIGHTS RESERVED.
 
