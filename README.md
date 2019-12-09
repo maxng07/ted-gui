@@ -21,7 +21,7 @@ Graphical view of accessing TED-GUI off LWS, notice that html, js and wasm is lo
 <img src="https://github.com/maxng07/Lightweight-Web-Server/blob/master/graphics/webserver.png">
 
 <p>
-# Additional Use-Case <br>
+<h2> Additional Use-Case </h2><br>
 Using TED WASM for Field Encryption of sensitive data or confidential data in forms before POSTING in HTTPS/TLS to Content Distribution Network or the Origin Server. Data such as Credit card number, Personal identifiable number can remain encrypted at rest, until the Application that handles it, decrypts the data.
 <p>
 <h2>Licensing </h2>
