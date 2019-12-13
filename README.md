@@ -22,7 +22,11 @@ Graphical view of accessing TED-GUI off LWS, notice that html, js and wasm is lo
 
 <p>
 <h2> Additional Use-Case </h2>
-Using TED WASM for Field Encryption of sensitive data or confidential data in forms before POSTING in HTTPS/TLS to Content Distribution Network or the Origin Server. Data such as Credit card details commonly needed for payment, Personal identifiable number can remain encrypted at rest, until the Application that handles it, decrypts the data.
+<h3>Field Encryption for Sensitive and Confidential data</h3>
+Using TED WASM for Field Encryption of sensitive data or confidential data in forms before POSTING it in HTTPS/TLS to Content Distribution Network or the Origin Server. Data such as Credit card details commonly needed for payment, Personal identifiable number can remain encrypted at rest, until the Application that handles it, decrypts the data. A good example would be Credit Card details for payment. In the example below, Credit Card Details are send to the local wasm binary for encryption and the return encrypted data output is then send back to the Payment Gateway or Server ensuring the User's Credit Card details are encrypted at rest and storage. Only the processing application with the right keys can decipher the data.
+<p>
+
+ <img src="https://github.com/maxng07/ted-gui/blob/master/doc/field_encryption/cc1.jpg">
 <p>
 <h2>Licensing </h2>
 All RIGHTS RESERVED.
