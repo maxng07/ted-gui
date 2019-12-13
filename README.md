@@ -6,14 +6,14 @@ TED-GUI offers a Web based Graphical interface for user to input the parameters,
 TED-GUI with the html and js is able to support encipher/decipher of both single-byte and double-byte language with the current release. Verified and tested languages includes: English, Bahasa, Simplified Chinese, Japanese and Thai, representing both single and double byte language. Please feel free to report any languages that is not able to be encipher/decipher. If you intend to build your own html and use the wasm binary file, you can perform an encodeURI/decodeURI for double byte language. The ted wasm binary has the same logic as the ted binary and accept the same CLI inputs and one additional for text.
 
 <b>Usage: </b></br>
-You can download the html, js and wasm and run it with your own web servers or web storage. Some browsers like firefox supports allowing or disabling CORS, this will allow wasm to be completely loaded without a web server by accessing the html. It is also possible to build a local lightweight web server for the html and wasm to run locally, an option is to use <a href="https://github.com/maxng07/Lightweight-Web-Server"> LWS - Lightweight Web Server </a>. LWS will be able to set wasm as Application/WASM in the Content Type in the HTTP header. Some web browsers like Firefox will not load if this is not set correctly.
+You can download the html, js and wasm and run it with your own web servers or web storage. Some browsers like firefox supports allowing or disabling CORS, this will allow wasm to be completely loaded without a web server by accessing the html. It is also possible to build a local lightweight web server for the html and wasm to run locally, an option is to use <a href="https://github.com/maxng07/Lightweight-Web-Server"> LWS - Lightweight Web Server </a>. LWS will be able to set wasm as Application/WASM in the Content Type in the HTTP header. Some web browsers like Firefox will not load if the Content Type Header is not set correctly.
 
 Download the 3 files from <a href="https://github.com/maxng07/ted-gui/releases"> here </a><br>
 <p>
 Tutorials are <a href="https://github.com/maxng07/ted-gui/tree/master/graphics"> here </a>
 <p>
 
-I have also written up an Overview of how TED-GUI works, with the information allowing you to build your own HTML and WebApp, utilising ted-wb wasm for other use-cases. Be sure to check out the <a href="https://github.com/maxng07/ted-gui/wiki"> Wiki </a> Page.
+I have also written an Overview of how TED-GUI works, with the information allowing you to build your own HTML and WebApp for any application requiring encryption, utilising ted-wb wasm on other use-cases. Be sure to check out the <a href="https://github.com/maxng07/ted-gui/wiki"> Wiki </a> Page.
 <p>
  
 Graphical view of accessing TED-GUI off LWS, notice that html, js and wasm is loaded off the server. Each Text Encipher/Decipher is handle locally within the browser by TED wasm, nothing is send to the server despite loading off LWS.
@@ -21,7 +21,7 @@ Graphical view of accessing TED-GUI off LWS, notice that html, js and wasm is lo
 <img src="https://github.com/maxng07/Lightweight-Web-Server/blob/master/graphics/webserver.png">
 
 <p>
-<h2> Additional Use-Case </h2>
+<h2> Additional Possible Use-Case </h2>
 <h3>Field Encryption for Sensitive and Confidential data</h3>
 Using TED WASM for Field Encryption of sensitive data or confidential data in forms before POSTING it in HTTPS/TLS to Content Distribution Network or the Origin Server. Data such as Credit card details commonly needed for payment, Personal identifiable number can remain encrypted at rest, until the Application that handles it, decrypts the data. A good example would be Credit Card details for payment. Typically a user's credit card details will be send back in HTTPS/TLS, an encrypted tunnel in transit. Data may go through several intermediaries like reverse proxy (CDN), gateway, loadbalancer before reaching the Origin Server for storage and later processing. All these through the Internet Peering. In the example below, Credit Card Details are send to the local wasm binary for encryption and the return encrypted data output is then send back to the Payment Gateway or Server ensuring the User's Credit Card details are encrypted at rest and storage in addition to HTTPS/TLS transit. Only the processing application with the right keys can decipher the data.
 <p>
