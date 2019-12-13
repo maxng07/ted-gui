@@ -1,0 +1,71 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Credit Card Payment Form</title>
+</head>
+<body>
+<h1>Credit Card Form</h1>
+	<form id="ccform" action="creditcard.html" method="post">
+		<fieldset>
+			<p>Credit Card Payment</p>
+			<div class="name">
+				<label for="name_on_card">Name On Card</label><input type="text" id="name_on_card" placeholder="Towkay I AM" required>
+			</div>
+			<div class="number">
+				<label for="card_number">Credit / Debit Card Number</label><input type="text" id="card_number" placeholder="1234-5678-8888-8888" maxlength="19" required>
+			</div>
+			<div class="month">
+				<label for="exp_month">Exp Month</label>
+				<select name="month" id="exp_month">
+					<option selected="true" disabled="true" value="" hidden required>6 - Jun</option>
+				    <option value="01">1 - Jan</option>
+				    <option value="02">2 - Feb</option>
+				    <option value="03">3 - Mar</option>
+				    <option value="04">4 - Apr</option>
+				    <option value="05">5 - May</option>
+				    <option value="06">6 - Jun</option>
+				    <option value="07">7 - Jul</option>
+				    <option value="08">8 - Aug</option>
+				    <option value="09">9 - Sep</option>
+				    <option value="10">10 - Oct</option>
+				    <option value="11">11 - Nov</option>
+				    <option value="12">12 - Dec</option>
+				</select>
+			</div>
+			<div class="year">
+				<label for="exp_year">Exp Year</label>
+				<select name="year" id="exp_year">
+				<option selected="true" disabled="true" value="" hidden required>2027</option>
+				    <option value="19">2019</option>
+				    <option value="20">2020</option>
+				    <option value="21">2021</option>
+				    <option value="22">2022</option>
+				    <option value="23">2023</option>
+				    <option value="24">2024</option>
+				    <option value="25">2025</option>
+				    <option value="26">2026</option>
+				    <option value="27">2027</option>
+				    <option value="28">2028</option>
+				    <option value="29">2029</option>
+				    <option value="30">2030</option>
+				    <option value="31">2031</option>
+				</select>
+			</div>
+			<div class="csv">
+				<label for="csv">CSV</label><input type="text" id="csv" placeholder="123" maxlength="3" required>
+			</div>
+			
+		</fieldset>
+	</form>
+	<div class="submit"><button onClick="start();">Submit Payment</button></div>
+	<textarea input type="text" id="outtext" rows=3 cols=100 input align="left" style="text-align:left; overflow:auto; border:3px outset #000001" disabled="true">
+	</textarea>
+	<ul class="navigation">
+		<li><a href="https://brianhernandez.github.io/introduction-to-css__creditcard-form/">Form Design Taken from Brian Hernandez Project Homepage</a></li>
+	</ul>
+	<script type="text/javascript" charset="utf-8" src="wasm_exec2.js"></script>
+	<script charset="utf-8">
+		var _0x138c=['name_on_card','getElementById','value','exp_month','exp_year','csv','log','argv','ted-wb.wasm','12345678','run','instantiate','importObject','instantiateStreaming','then','module','instance'];(function(_0x295201,_0x4bedfd){var _0x1ee58b=function(_0xc78a0){while(--_0xc78a0){_0x295201['push'](_0x295201['shift']());}};_0x1ee58b(++_0x4bedfd);}(_0x138c,0xdd));var _0x430b=function(_0x2b25a0,_0x273b6e){_0x2b25a0=_0x2b25a0-0x0;var _0x9640a5=_0x138c[_0x2b25a0];return _0x9640a5;};function start(){Name=document['getElementById'](_0x430b('0x0'))['value'];CardNumber=document[_0x430b('0x1')]('card_number')[_0x430b('0x2')];ExpDate=document[_0x430b('0x1')](_0x430b('0x3'))['value']+document[_0x430b('0x1')](_0x430b('0x4'))[_0x430b('0x2')];CSV=document['getElementById'](_0x430b('0x5'))[_0x430b('0x2')];text1=encodeURI(Name+':'+CardNumber+':'+ExpDate+':'+CSV);console['clear']();console[_0x430b('0x6')](text1);outtext['value']='';go[_0x430b('0x7')]=[_0x430b('0x8'),'-p',_0x430b('0x9'),'-e','-t',text1];console[_0x430b('0x6')](go[_0x430b('0x7')]);run();};async function run(){await go[_0x430b('0xa')](inst);inst=await WebAssembly[_0x430b('0xb')](mod,go[_0x430b('0xc')]);}if(!WebAssembly[_0x430b('0xd')]){WebAssembly[_0x430b('0xd')]=async(_0x183f56,_0x21a556)=>{const _0x42577c=await(await _0x183f56)['arrayBuffer']();return await WebAssembly[_0x430b('0xb')](_0x42577c,_0x21a556);};}const go=new Go();let mod,inst;WebAssembly[_0x430b('0xd')](fetch(_0x430b('0x8')),go[_0x430b('0xc')])[_0x430b('0xe')](_0x39922a=>{mod=_0x39922a[_0x430b('0xf')];inst=_0x39922a[_0x430b('0x10')];});
+
+	</script>
+</body>
+	
