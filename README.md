@@ -34,7 +34,7 @@ All RIGHTS RESERVED.
 
 TED-GUI also uses a GO package for AES-GCMSIV which has a copyright license as part of BoringSSL. The copyright notice as is below
 
-/* Copyright (c) 2017, Google Inc. *
+ ``` Copyright (c) 2017, Google Inc. 
 
     This code was written to support development of BoringSSL and thus is
     considered part of BoringSSL and under the same license.
@@ -47,4 +47,5 @@ TED-GUI also uses a GO package for AES-GCMSIV which has a copyright license as p
     SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
     WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
     OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
-    CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. */
+    CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. 
+```
